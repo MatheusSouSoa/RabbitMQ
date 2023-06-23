@@ -6,7 +6,7 @@ import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
 import org.springframework.stereotype.Component;
 
-import br.com.microservico.estoquepreco.constants.RabbitMQContants;
+import br.com.microservico.estoquepreco.constants.RabbitMQConstants;
 import jakarta.annotation.PostConstruct;
 
 @Component
@@ -34,8 +34,8 @@ public class RabbitMQConnection {
 
     @PostConstruct
     private void adiciona (){
-        Queue filaEstoque = this.fila(RabbitMQContants.FILA_ESTOQUE);
-        Queue filaPreco = this.fila(RabbitMQContants.FILA_PRECO);
+        Queue filaEstoque = this.fila(RabbitMQConstants.FILA_ESTOQUE);
+        Queue filaPreco = this.fila(RabbitMQConstants.FILA_PRECO);
 
         DirectExchange troca= this.trocaDireta();
 

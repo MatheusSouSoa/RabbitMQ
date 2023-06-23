@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EstoqueprecoApplication<estoquepreco>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.microservico.estoquepreco.EstoqueprecoApplication",
+            "projectName": "estoquepreco",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
